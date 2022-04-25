@@ -1,0 +1,15 @@
+domain: shuttlerock.com
+layout:
+- go.kubebuilder.io/v3
+projectName: devops-api
+repo: github.com/shuttlerock/devops-api
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: shuttlerock.com
+  group: devops
+  kind: Release
+  path: github.com/shuttlerock/devops-api/api/v1alpha1
+  version: v1alpha1
+version: "3"

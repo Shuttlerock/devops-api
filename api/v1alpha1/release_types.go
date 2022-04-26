@@ -25,6 +25,7 @@ import (
 
 // ReleaseSpec defines the desired state of Release
 type ReleaseSpec struct {
+	Version         string          `json:"version,omitempty"  protobuf:"bytes,2,opt,name=version"`
 	ReleaseNotesURL string          `json:"releaseNotesURL,omitempty" protobuf:"bytes,8,opt,name=releaseNotesURL"`
 	Issues          []IssueSummary  `json:"issues,omitempty" protobuf:"bytes,6,opt,name=issues"`
 	Commits         []CommitSummary `json:"commits,omitempty" protobuf:"bytes,5,opt,name=commits"`

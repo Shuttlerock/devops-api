@@ -250,6 +250,8 @@ spec:
                 type: array
               releaseNotesURL:
                 type: string
+              version:
+                type: string
             type: object
           status:
             description: ReleaseStatus defines the observed state of Release

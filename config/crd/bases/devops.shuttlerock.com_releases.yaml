@@ -46,6 +46,11 @@ spec:
                           items:
                             description: AccountReference is a reference to a user
                               account in another system that is attached to this user
+                            properties:
+                              id:
+                                type: string
+                              provider:
+                                type: string
                             type: object
                           type: array
                         avatarUrl:
@@ -75,6 +80,11 @@ spec:
                           items:
                             description: AccountReference is a reference to a user
                               account in another system that is attached to this user
+                            properties:
+                              id:
+                                type: string
+                              provider:
+                                type: string
                             type: object
                           type: array
                         avatarUrl:
@@ -120,6 +130,11 @@ spec:
                               description: AccountReference is a reference to a user
                                 account in another system that is attached to this
                                 user
+                              properties:
+                                id:
+                                  type: string
+                                provider:
+                                  type: string
                               type: object
                             type: array
                           avatarUrl:
@@ -150,6 +165,11 @@ spec:
                           items:
                             description: AccountReference is a reference to a user
                               account in another system that is attached to this user
+                            properties:
+                              id:
+                                type: string
+                              provider:
+                                type: string
                             type: object
                           type: array
                         avatarUrl:
@@ -177,6 +197,13 @@ spec:
                       type: string
                     labels:
                       items:
+                        properties:
+                          color:
+                            type: string
+                          name:
+                            type: string
+                          url:
+                            type: string
                         type: object
                       type: array
                     message:
@@ -194,6 +221,11 @@ spec:
                           items:
                             description: AccountReference is a reference to a user
                               account in another system that is attached to this user
+                            properties:
+                              id:
+                                type: string
+                              provider:
+                                type: string
                             type: object
                           type: array
                         avatarUrl:

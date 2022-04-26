@@ -57,9 +57,9 @@ type IssueSummary struct {
 }
 
 type IssueLabel struct {
-	//URL   string `json:"name,omitempty"  protobuf:"bytes,1,opt,name=name"`
-	//Name  string `json:"url,omitempty"  protobuf:"bytes,2,opt,name=url"`
-	//Color string `json:"color,omitempty"  protobuf:"bytes,3,opt,name=color"`
+	URL   string `json:"name,omitempty"  protobuf:"bytes,1,opt,name=name"`
+	Name  string `json:"url,omitempty"  protobuf:"bytes,2,opt,name=url"`
+	Color string `json:"color,omitempty"  protobuf:"bytes,3,opt,name=color"`
 }
 
 // UserDetails contains details of a user
@@ -77,8 +77,8 @@ type UserDetails struct {
 
 // AccountReference is a reference to a user account in another system that is attached to this user
 type AccountReference struct {
-	//Provider string `json:"provider,omitempty"  protobuf:"bytes,1,opt,name=provider"`
-	//ID       string `json:"id,omitempty"  protobuf:"bytes,2,opt,name=id"`
+	Provider string `json:"provider,omitempty"  protobuf:"bytes,1,opt,name=provider"`
+	ID       string `json:"id,omitempty"  protobuf:"bytes,2,opt,name=id"`
 }
 
 // ReleaseStatus defines the observed state of Release

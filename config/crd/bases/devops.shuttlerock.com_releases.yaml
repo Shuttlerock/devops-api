@@ -41,11 +41,59 @@ spec:
                   properties:
                     author:
                       description: UserDetails contains details of a user
+                      properties:
+                        accountReference:
+                          items:
+                            description: AccountReference is a reference to a user
+                              account in another system that is attached to this user
+                            type: object
+                          type: array
+                        avatarUrl:
+                          type: string
+                        creationTimestamp:
+                          format: date-time
+                          type: string
+                        email:
+                          type: string
+                        externalUser:
+                          type: boolean
+                        login:
+                          type: string
+                        name:
+                          type: string
+                        serviceAccount:
+                          type: string
+                        url:
+                          type: string
                       type: object
                     branch:
                       type: string
                     committer:
                       description: UserDetails contains details of a user
+                      properties:
+                        accountReference:
+                          items:
+                            description: AccountReference is a reference to a user
+                              account in another system that is attached to this user
+                            type: object
+                          type: array
+                        avatarUrl:
+                          type: string
+                        creationTimestamp:
+                          format: date-time
+                          type: string
+                        email:
+                          type: string
+                        externalUser:
+                          type: boolean
+                        login:
+                          type: string
+                        name:
+                          type: string
+                        serviceAccount:
+                          type: string
+                        url:
+                          type: string
                       type: object
                     issueIds:
                       items:
@@ -66,12 +114,61 @@ spec:
                     assignees:
                       items:
                         description: UserDetails contains details of a user
+                        properties:
+                          accountReference:
+                            items:
+                              description: AccountReference is a reference to a user
+                                account in another system that is attached to this
+                                user
+                              type: object
+                            type: array
+                          avatarUrl:
+                            type: string
+                          creationTimestamp:
+                            format: date-time
+                            type: string
+                          email:
+                            type: string
+                          externalUser:
+                            type: boolean
+                          login:
+                            type: string
+                          name:
+                            type: string
+                          serviceAccount:
+                            type: string
+                          url:
+                            type: string
                         type: object
                       type: array
                     body:
                       type: string
                     closedBy:
                       description: UserDetails contains details of a user
+                      properties:
+                        accountReference:
+                          items:
+                            description: AccountReference is a reference to a user
+                              account in another system that is attached to this user
+                            type: object
+                          type: array
+                        avatarUrl:
+                          type: string
+                        creationTimestamp:
+                          format: date-time
+                          type: string
+                        email:
+                          type: string
+                        externalUser:
+                          type: boolean
+                        login:
+                          type: string
+                        name:
+                          type: string
+                        serviceAccount:
+                          type: string
+                        url:
+                          type: string
                       type: object
                     creationTimestamp:
                       format: date-time
@@ -92,6 +189,30 @@ spec:
                       type: string
                     user:
                       description: UserDetails contains details of a user
+                      properties:
+                        accountReference:
+                          items:
+                            description: AccountReference is a reference to a user
+                              account in another system that is attached to this user
+                            type: object
+                          type: array
+                        avatarUrl:
+                          type: string
+                        creationTimestamp:
+                          format: date-time
+                          type: string
+                        email:
+                          type: string
+                        externalUser:
+                          type: boolean
+                        login:
+                          type: string
+                        name:
+                          type: string
+                        serviceAccount:
+                          type: string
+                        url:
+                          type: string
                       type: object
                   type: object
                 type: array

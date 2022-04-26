@@ -64,15 +64,15 @@ type IssueLabel struct {
 
 // UserDetails contains details of a user
 type UserDetails struct {
-	//Login             string             `json:"login,omitempty"  protobuf:"bytes,1,opt,name=login"`
-	//Name              string             `json:"name,omitempty"  protobuf:"bytes,2,opt,name=name"`
-	//Email             string             `json:"email,omitempty"  protobuf:"bytes,3,opt,name=email"`
-	//CreationTimestamp *metav1.Time       `json:"creationTimestamp,omitempty" protobuf:"bytes,4,opt,name=creationTimestamp"`
-	//URL               string             `json:"url,omitempty"  protobuf:"bytes,5,opt,name=url"`
-	//AvatarURL         string             `json:"avatarUrl,omitempty"  protobuf:"bytes,6,opt,name=avatarUrl"`
-	//ServiceAccount    string             `json:"serviceAccount,omitempty"  protobuf:"bytes,7,opt,name=serviceAccount"`
-	//Accounts          []AccountReference `json:"accountReference,omitempty"  protobuf:"bytes,8,opt,name=accountReference"`
-	//ExternalUser      bool               `json:"externalUser,omitempty"  protobuf:"bytes,9,opt,name=externalUser"`
+	Login             string             `json:"login,omitempty"  protobuf:"bytes,1,opt,name=login"`
+	Name              string             `json:"name,omitempty"  protobuf:"bytes,2,opt,name=name"`
+	Email             string             `json:"email,omitempty"  protobuf:"bytes,3,opt,name=email"`
+	CreationTimestamp *metav1.Time       `json:"creationTimestamp,omitempty" protobuf:"bytes,4,opt,name=creationTimestamp"`
+	URL               string             `json:"url,omitempty"  protobuf:"bytes,5,opt,name=url"`
+	AvatarURL         string             `json:"avatarUrl,omitempty"  protobuf:"bytes,6,opt,name=avatarUrl"`
+	ServiceAccount    string             `json:"serviceAccount,omitempty"  protobuf:"bytes,7,opt,name=serviceAccount"`
+	Accounts          []AccountReference `json:"accountReference,omitempty"  protobuf:"bytes,8,opt,name=accountReference"`
+	ExternalUser      bool               `json:"externalUser,omitempty"  protobuf:"bytes,9,opt,name=externalUser"`
 }
 
 // AccountReference is a reference to a user account in another system that is attached to this user

@@ -248,6 +248,137 @@ spec:
                       type: object
                   type: object
                 type: array
+              pullRequests:
+                items:
+                  description: IssueSummary is the summary of an issue
+                  properties:
+                    assignees:
+                      items:
+                        description: UserDetails contains details of a user
+                        properties:
+                          accountReference:
+                            items:
+                              description: AccountReference is a reference to a user
+                                account in another system that is attached to this
+                                user
+                              properties:
+                                id:
+                                  type: string
+                                provider:
+                                  type: string
+                              type: object
+                            type: array
+                          avatarUrl:
+                            type: string
+                          creationTimestamp:
+                            format: date-time
+                            type: string
+                          email:
+                            type: string
+                          externalUser:
+                            type: boolean
+                          login:
+                            type: string
+                          name:
+                            type: string
+                          serviceAccount:
+                            type: string
+                          url:
+                            type: string
+                        type: object
+                      type: array
+                    body:
+                      type: string
+                    closedBy:
+                      description: UserDetails contains details of a user
+                      properties:
+                        accountReference:
+                          items:
+                            description: AccountReference is a reference to a user
+                              account in another system that is attached to this user
+                            properties:
+                              id:
+                                type: string
+                              provider:
+                                type: string
+                            type: object
+                          type: array
+                        avatarUrl:
+                          type: string
+                        creationTimestamp:
+                          format: date-time
+                          type: string
+                        email:
+                          type: string
+                        externalUser:
+                          type: boolean
+                        login:
+                          type: string
+                        name:
+                          type: string
+                        serviceAccount:
+                          type: string
+                        url:
+                          type: string
+                      type: object
+                    creationTimestamp:
+                      format: date-time
+                      type: string
+                    id:
+                      type: string
+                    labels:
+                      items:
+                        properties:
+                          color:
+                            type: string
+                          name:
+                            type: string
+                          url:
+                            type: string
+                        type: object
+                      type: array
+                    message:
+                      type: string
+                    state:
+                      type: string
+                    title:
+                      type: string
+                    url:
+                      type: string
+                    user:
+                      description: UserDetails contains details of a user
+                      properties:
+                        accountReference:
+                          items:
+                            description: AccountReference is a reference to a user
+                              account in another system that is attached to this user
+                            properties:
+                              id:
+                                type: string
+                              provider:
+                                type: string
+                            type: object
+                          type: array
+                        avatarUrl:
+                          type: string
+                        creationTimestamp:
+                          format: date-time
+                          type: string
+                        email:
+                          type: string
+                        externalUser:
+                          type: boolean
+                        login:
+                          type: string
+                        name:
+                          type: string
+                        serviceAccount:
+                          type: string
+                        url:
+                          type: string
+                      type: object
+                  type: object
+                type: array
               releaseNotesURL:
                 type: string
               version:

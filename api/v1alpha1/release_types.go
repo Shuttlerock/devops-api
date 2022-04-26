@@ -29,6 +29,7 @@ type ReleaseSpec struct {
 	ReleaseNotesURL string          `json:"releaseNotesURL,omitempty" protobuf:"bytes,8,opt,name=releaseNotesURL"`
 	Issues          []IssueSummary  `json:"issues,omitempty" protobuf:"bytes,6,opt,name=issues"`
 	Commits         []CommitSummary `json:"commits,omitempty" protobuf:"bytes,5,opt,name=commits"`
+	PullRequests    []IssueSummary  `json:"pullRequests,omitempty" protobuf:"bytes,7,opt,name=pullRequests"`
 }
 
 // CommitSummary is the summary of a commit

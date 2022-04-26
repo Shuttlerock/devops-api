@@ -25,8 +25,20 @@ import (
 
 // ReleaseSpec defines the desired state of Release
 type ReleaseSpec struct {
-	ReleaseNotesURL string         `json:"releaseNotesURL,omitempty" protobuf:"bytes,8,opt,name=releaseNotesURL"`
-	Issues          []IssueSummary `json:"issues,omitempty" protobuf:"bytes,6,opt,name=issues"`
+	ReleaseNotesURL string          `json:"releaseNotesURL,omitempty" protobuf:"bytes,8,opt,name=releaseNotesURL"`
+	Issues          []IssueSummary  `json:"issues,omitempty" protobuf:"bytes,6,opt,name=issues"`
+	Commits         []CommitSummary `json:"commits,omitempty" protobuf:"bytes,5,opt,name=commits"`
+}
+
+// CommitSummary is the summary of a commit
+type CommitSummary struct {
+	Message   string       `json:"message,omitempty"  protobuf:"bytes,1,opt,name=message"`
+	SHA       string       `json:"sha,omitempty"  protobuf:"bytes,2,opt,name=sha"`
+	URL       string       `json:"url,omitempty"  protobuf:"bytes,3,opt,name=url"`
+	Author    *UserDetails `json:"author,omitempty"  protobuf:"bytes,4,opt,name=author"`
+	Committer *UserDetails `json:"committer,omitempty"  protobuf:"bytes,5,opt,name=committer"`
+	Branch    string       `json:"branch,omitempty"  protobuf:"bytes,6,opt,name=branch"`
+	IssueIDs  []string     `json:"issueIds,omitempty"  protobuf:"bytes,7,opt,name=issueIds"`
 }
 
 // IssueSummary is the summary of an issue

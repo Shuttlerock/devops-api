@@ -35,6 +35,30 @@ spec:
           spec:
             description: ReleaseSpec defines the desired state of Release
             properties:
+              commits:
+                items:
+                  description: CommitSummary is the summary of a commit
+                  properties:
+                    author:
+                      description: UserDetails contains details of a user
+                      type: object
+                    branch:
+                      type: string
+                    committer:
+                      description: UserDetails contains details of a user
+                      type: object
+                    issueIds:
+                      items:
+                        type: string
+                      type: array
+                    message:
+                      type: string
+                    sha:
+                      type: string
+                    url:
+                      type: string
+                  type: object
+                type: array
               issues:
                 items:
                   description: IssueSummary is the summary of an issue
